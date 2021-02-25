@@ -9,5 +9,7 @@
 actor = Actor.create({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
 
 
+actor = Actor.create({first_name: "Chris", last_name: "Hemsworth", known_for: "Thor"})
+
 
 
