@@ -10,5 +10,7 @@ actor = Actor.create({first_name: "Benedict", last_name: "Cumberbatch", known_fo
 
 actor = Actor.create({first_name: "Chris", last_name: "Hemsworth", known_for: "Thor"})
 
-actor = Actor.create({first_name: "Tom", last_name: "Holland", known_for: "Spiderman"})
 
+movie = Movie.create({title: "The Avengers", year: 2012, plot: "Save NYC from Loki's ambush"})
+
+movie = Movie.create({title: "Wolf of Wallstreets", year: 2013, plot: "Jordan Belfort and his posse seek to get rich by manipulating the market"})
