@@ -5,8 +5,5 @@ class Api::ActorsController < ApplicationController
     render "actors.json.jb"
   end
 
-  # def movies
-  #   render "movies.json.jb"
-  # end
 
 end
