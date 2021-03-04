@@ -28,5 +28,10 @@ class Api::ActorsController < ApplicationController
     render "show.json.jb"
   end
 
+  def destroy
+    @actor = Actor.find_by(id: params[:id])
+    @actor.destroy
+    render json: {message: "song removed"}
+  end
   
 end

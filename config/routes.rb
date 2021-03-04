@@ -8,12 +8,12 @@ Rails.application.routes.draw do
     get "/movies/:id" => "movies#show"
     post "/movies" => "movies#create"
     patch "/movies/:id" => "movies#update"
-    delete "/movies" => "movies#destroy"
+    delete "/movies/:id" => "movies#destroy"
 
     get "/actors" => "actors#index"
     get "/actors/:id" => "actors#show"
     post "/actors" => "actors#create"
     patch "/actors/:id" => "actors#update"
-    delete "/actors" => "actors#destroy"
+    delete "/actors/:id" => "actors#destroy"
   end
 end
