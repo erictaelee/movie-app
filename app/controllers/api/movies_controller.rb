@@ -3,4 +3,8 @@ class Api::MoviesController < ApplicationController
     @movies = Movie.all
     render "movies.json.jb"
   end
+  
+  def create
+
+  end
 end
