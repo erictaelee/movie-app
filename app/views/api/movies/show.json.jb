@@ -3,4 +3,5 @@
   title: @movie.title,
   year: @movie.year,
   plot: @movie.plot,
+  english: @movie.english
 }
