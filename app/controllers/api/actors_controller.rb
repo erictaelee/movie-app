@@ -9,10 +9,15 @@ class Api::ActorsController < ApplicationController
     first_name: params[:first_name],
     last_name: params[:last_name],
     known_for: params[:known_for],
-    gender: params[:gender]
+    gender: params[:gender],
+    age: params[:age]
   )
-    @actor.save
-    render "show.json.jb"
+    if @actor.save
+      render "show.json.jb"
+    else
+      render json: {errors: @actor.errors.full_messages}
+    end
+    
   end
 
   def show
@@ -26,6 +31,7 @@ class Api::ActorsController < ApplicationController
     @actor.last_name = params[:last_name]
     @actor.known_for = params[:known_for]
     @actor.gender = params[:gender]
+    @actor.age = params[:age]
     @actor.save
     render "show.json.jb"
   end
