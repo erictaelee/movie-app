@@ -1,0 +1,5 @@
+{
+  id: @mg.id,
+  movie_id: @mg.movie_id,
+  genre_id: @mg.genre_id
+}
